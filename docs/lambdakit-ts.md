@@ -37,7 +37,7 @@ Then from within Claude Code, add the marketplace and install the skill:
 /plugin marketplace add thecarlo/carlo-marketplace
 
 # Install the plugin
-/plugin install aws@carlo-marketplace
+/plugin install lambdakit-ts@carlo-marketplace
 ```
 
 ### Option 2: Clone this repository
@@ -47,7 +47,7 @@ Then from within Claude Code, add the marketplace and install the skill:
 git clone https://github.com/thecarlo/carlo-marketplace.git
 
 # Add to your Claude Code plugins directory
-cp -r carlo-marketplace/plugins/aws ~/.config/claude/plugins/
+cp -r carlo-marketplace/plugins/lambdakit-ts ~/.config/claude/plugins/
 ```
 
 ## Uninstalling
@@ -61,7 +61,7 @@ claude
 Then from within Claude Code, uninstall the plugin:
 
 ```bash
-/plugin uninstall aws
+/plugin uninstall lambdakit-ts
 ```
 
 ## Usage

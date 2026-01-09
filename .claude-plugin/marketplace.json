@@ -10,11 +10,11 @@
   },
   "plugins": [
     {
-      "name": "aws",
-      "description": "AWS helper functions, including TypeScript toolkit for bootstrapping AWS Lambda functions",
-      "source": "./plugins/aws",
-      "version": "1.0.0",
+      "name": "lambdakit-ts",
+      "description": "TypeScript toolkit for bootstrapping AWS Lambda functions",
+      "source": "./plugins/lambdakit-ts",
       "strict": false,
+      "version": "1.0.0",
       "skills": ["./skills/lambdakit-ts"]
     },
     {
@@ -22,13 +22,15 @@
       "description": "A Zod v4 validation specialist for implementing type-safe validation in TypeScript applications",
       "source": "./plugins/zod",
       "strict": false,
+      "version": "1.0.0",
       "skills": ["./skills/zod"]
     },
     {
-      "name": "git",
-      "description": "Git plugins including a create git commit message skill",
-      "source": "./plugins/git",
+      "name": "commit-message",
+      "description": "Git commit message plugin to create a git commit message",
+      "source": "./plugins/commit-message",
       "strict": false,
+      "version": "1.0.0",
       "skills": ["./skills/commit-message"]
     }
   ]
