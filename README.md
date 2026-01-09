@@ -55,8 +55,22 @@ cp -r claude-skills/skills/* ~/.config/claude/skills/
 
 In your Claude Code session, in a new directory where you want to create a new lambda, ask Claude to use it:
 
+### Prompt 1
+
 ```
-Bootstrap a new Lambda function using the lambdakit-ts skill
+/lambdakit-ts
+```
+
+### Prompt 2
+
+```
+/lambdakit-ts bootstrap a new lambda
+```
+
+### Prompt 2 (more granular)
+
+```
+bootstrap a new lambda using the lambdakit-ts skill
 ```
 
 The skill will:
