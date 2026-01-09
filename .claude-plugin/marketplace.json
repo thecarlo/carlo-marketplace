@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "carlo-skills",
+      "name": "lambdakit-ts",
       "description": "TypeScript toolkit for bootstrapping AWS Lambda functions with production-ready best practices",
       "source": "./",
       "strict": false,
