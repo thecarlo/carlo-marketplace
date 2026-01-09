@@ -31,13 +31,13 @@ Install the skill(s) you want:
 **For Commit Message:**
 
 ```bash
-/plugin install commit-message@carlo-marketplace
+/plugin install git@carlo-marketplace
 ```
 
 **For LambdaKit TS:**
 
 ```bash
-/plugin install lambdakit-ts@carlo-marketplace
+/plugin install aws@carlo-marketplace
 ```
 
 **For Zod:**
@@ -52,8 +52,8 @@ Install the skill(s) you want:
 # Clone the repository
 git clone https://github.com/thecarlo/carlo-marketplace.git
 
-# Add to your Claude Code skills directory
-cp -r carlo-marketplace/skills/* ~/.config/claude/skills/
+# Add to your Claude Code plugins directory
+cp -r carlo-marketplace/plugins/* ~/.config/claude/plugins/
 ```
 
 ## Uninstalling
@@ -69,13 +69,13 @@ Then from within Claude Code, uninstall individual skills:
 **For Commit Message:**
 
 ```bash
-/plugin uninstall commit-message
+/plugin uninstall git
 ```
 
 **For LambdaKit TS:**
 
 ```bash
-/plugin uninstall lambdakit-ts
+/plugin uninstall aws
 ```
 
 **For Zod:**

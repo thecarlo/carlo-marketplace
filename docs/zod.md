@@ -38,7 +38,7 @@ Then from within Claude Code, add the marketplace and install the skill:
 # Add the marketplace
 /plugin marketplace add thecarlo/carlo-marketplace
 
-# Install the skill
+# Install the plugin
 /plugin install zod@carlo-marketplace
 ```
 
@@ -48,8 +48,8 @@ Then from within Claude Code, add the marketplace and install the skill:
 # Clone the repository
 git clone https://github.com/thecarlo/carlo-marketplace.git
 
-# Add to your Claude Code skills directory
-cp -r carlo-marketplace/skills/zod ~/.config/claude/skills/
+# Add to your Claude Code plugins directory
+cp -r carlo-marketplace/plugins/zod ~/.config/claude/plugins/
 ```
 
 ## Uninstalling
@@ -60,7 +60,7 @@ Launch Claude Code first:
 claude
 ```
 
-Then from within Claude Code, uninstall the skill:
+Then from within Claude Code, uninstall the plugin:
 
 ```bash
 /plugin uninstall zod

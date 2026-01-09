@@ -25,7 +25,7 @@
       "skills": ["./skills/zod"]
     },
     {
-      "name": "commit-message",
+      "name": "git",
       "description": "Git plugins including a create git commit message skill",
       "source": "./plugins/git",
       "strict": false,
