@@ -1,5 +1,5 @@
 ---
-name: LambdaKit TS
+name: lambdakit-ts
 description: A TypeScript (TS) toolkit for bootstrapping AWS Lambda functions with production-ready best practices.
 ---
 
