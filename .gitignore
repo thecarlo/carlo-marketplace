@@ -1,0 +1,60 @@
+# ------------------------------
+# OS / Editor
+# ------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# Logs
+# ------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------
+# Dependencies
+# ------------------------------
+node_modules/
+vendor/
+.pnp/
+.pnp.js
+
+# ------------------------------
+# Build / Dist
+# ------------------------------
+dist/
+build/
+out/
+coverage/
+.tmp/
+.cache/
+
+# ------------------------------
+# Environment / Secrets
+# ------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------
+# TypeScript
+# ------------------------------
+*.tsbuildinfo
+
+# ------------------------------
+# Tooling
+# ------------------------------
+.eslintcache
+.prettier-cache
+.turbo/
+.nx/
+.vite/
+
+# ------------------------------
+# Claude / AI tooling
+# ------------------------------
+.claude/
+.claude-cache/
