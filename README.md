@@ -4,10 +4,11 @@ A collection of custom Claude skills for software development.
 
 ## Available Skills
 
-| Skill | Description | Documentation |
-|-------|-------------|---------------|
-| **LambdaKit TS** | TypeScript toolkit for bootstrapping AWS Lambda functions with production-ready best practices | [View Docs](docs/lambdakit-ts.md) |
-| **Zod** | Zod v4 validation specialist for implementing type-safe validation in TypeScript applications | [View Docs](docs/zod.md) |
+| Skill               | Description                                                                                                  | Documentation                          |
+| ------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
+| **Commit Message**  | Create semantic git commit messages based on staged changes with optional emoji support                     | [View Docs](docs/commit-message.md)   |
+| **LambdaKit TS**    | TypeScript toolkit for bootstrapping AWS Lambda functions with production-ready best practices              | [View Docs](docs/lambdakit-ts.md)     |
+| **Zod**             | Zod v4 validation specialist for implementing type-safe validation in TypeScript applications               | [View Docs](docs/zod.md)              |
 
 ## Installation
 
@@ -27,12 +28,20 @@ Then from within Claude Code, add this marketplace:
 
 Install the skill(s) you want:
 
+**For Commit Message:**
+
+```bash
+/plugin install commit-message@carlo-marketplace
+```
+
 **For LambdaKit TS:**
+
 ```bash
 /plugin install lambdakit-ts@carlo-marketplace
 ```
 
 **For Zod:**
+
 ```bash
 /plugin install zod@carlo-marketplace
 ```
@@ -57,12 +66,20 @@ claude
 
 Then from within Claude Code, uninstall individual skills:
 
+**For Commit Message:**
+
+```bash
+/plugin uninstall commit-message
+```
+
 **For LambdaKit TS:**
+
 ```bash
 /plugin uninstall lambdakit-ts
 ```
 
 **For Zod:**
+
 ```bash
 /plugin uninstall zod
 ```
@@ -76,6 +93,8 @@ To remove the marketplace entirely:
 ## Usage
 
 See individual skill documentation for detailed usage instructions and examples:
+
+- [Commit Message Documentation](docs/commit-message.md)
 - [LambdaKit TS Documentation](docs/lambdakit-ts.md)
 - [Zod Documentation](docs/zod.md)
 

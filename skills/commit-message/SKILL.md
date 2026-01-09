@@ -22,7 +22,8 @@ When this skill is invoked, follow these steps:
    - Clear, imperative subject line under 50 characters
    - Body and footer if needed for complex changes
    - Add line breaks in the body if there are multiple sentences.
-6. **Present to user**: Display the content of the message for review, but do not include the git command. Ask the user: "Would you like me to create this commit for you?"
+6. **Present to user**: Show the formatted commit message for review without displaying the git command. Ask: "Would you like me to create this commit?"
+7. Once the commit is created, ask the user: "Would you like me to push this to the remote?"
 
 **If no changes are staged**: Inform the user that no changes are staged and suggest they use `git add` to stage files first.
 
