@@ -26,7 +26,13 @@ A Zod v4 validation specialist for implementing type-safe validation in TypeScri
 
 ### Option 1: Via Plugin Marketplace (Recommended)
 
-Add this marketplace to Claude Code and install the skill:
+Launch Claude Code first:
+
+```bash
+claude
+```
+
+Then from within Claude Code, add the marketplace and install the skill:
 
 ```bash
 # Add the marketplace
@@ -48,7 +54,13 @@ cp -r carlo-marketplace/skills/zod ~/.config/claude/skills/
 
 ## Uninstalling
 
-To uninstall this skill:
+Launch Claude Code first:
+
+```bash
+claude
+```
+
+Then from within Claude Code, uninstall the skill:
 
 ```bash
 /plugin uninstall zod

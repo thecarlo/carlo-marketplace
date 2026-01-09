@@ -13,13 +13,19 @@ A collection of custom Claude skills for software development.
 
 ### Option 1: Via Plugin Marketplace (Recommended)
 
-First, add this marketplace to Claude Code:
+Launch Claude Code first:
+
+```bash
+claude
+```
+
+Then from within Claude Code, add this marketplace:
 
 ```bash
 /plugin marketplace add thecarlo/carlo-marketplace
 ```
 
-Then install the skill(s) you want:
+Install the skill(s) you want:
 
 **For LambdaKit TS:**
 ```bash
@@ -43,7 +49,13 @@ cp -r carlo-marketplace/skills/* ~/.config/claude/skills/
 
 ## Uninstalling
 
-To uninstall individual skills:
+Launch Claude Code first:
+
+```bash
+claude
+```
+
+Then from within Claude Code, uninstall individual skills:
 
 **For LambdaKit TS:**
 ```bash

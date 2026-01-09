@@ -24,7 +24,13 @@ A TypeScript toolkit for bootstrapping AWS Lambda functions with production-read
 
 ### Option 1: Via Plugin Marketplace (Recommended)
 
-Add this marketplace to Claude Code and install the skill:
+Launch Claude Code first:
+
+```bash
+claude
+```
+
+Then from within Claude Code, add the marketplace and install the skill:
 
 ```bash
 # Add the marketplace
@@ -46,7 +52,13 @@ cp -r carlo-marketplace/skills/lambdakit-ts ~/.config/claude/skills/
 
 ## Uninstalling
 
-To uninstall this skill:
+Launch Claude Code first:
+
+```bash
+claude
+```
+
+Then from within Claude Code, uninstall the skill:
 
 ```bash
 /plugin uninstall lambdakit-ts
