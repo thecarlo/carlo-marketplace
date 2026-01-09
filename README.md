@@ -67,7 +67,7 @@ In your Claude Code session, in a new directory where you want to create a new l
 /lambdakit-ts bootstrap a new lambda
 ```
 
-### Prompt 2 (more granular)
+### Prompt 3
 
 ```
 bootstrap a new lambda using the lambdakit-ts skill
