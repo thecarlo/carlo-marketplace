@@ -38,10 +38,10 @@ Add this marketplace to Claude Code and install the skill:
 
 ```bash
 # Clone the repository
-git clone https://github.com/thecarlo/claude-skills.git
+git clone https://github.com/thecarlo/carlo-marketplace.git
 
 # Add to your Claude Code skills directory
-cp -r claude-skills/skills/lambdakit-ts ~/.config/claude/skills/
+cp -r carlo-marketplace/skills/lambdakit-ts ~/.config/claude/skills/
 ```
 
 ## Uninstalling

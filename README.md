@@ -35,10 +35,10 @@ Then install the skill(s) you want:
 
 ```bash
 # Clone the repository
-git clone https://github.com/thecarlo/claude-skills.git
+git clone https://github.com/thecarlo/carlo-marketplace.git
 
 # Add to your Claude Code skills directory
-cp -r claude-skills/skills/* ~/.config/claude/skills/
+cp -r carlo-marketplace/skills/* ~/.config/claude/skills/
 ```
 
 ## Uninstalling
