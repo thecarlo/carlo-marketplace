@@ -10,20 +10,12 @@
   },
   "plugins": [
     {
-      "name": "lambdakit-ts",
-      "source": "./skills/lambdakit-ts",
+      "name": "carlo-skills",
       "description": "TypeScript toolkit for bootstrapping AWS Lambda functions with production-ready best practices",
-      "version": "1.0.0",
-      "author": {
-        "name": "Carlo van Wyk"
-      },
-      "license": "MIT",
-      "keywords": [
-        "aws",
-        "lambda",
-        "typescript",
-        "serverless",
-        "bootstrap"
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/lambdakit-ts"
       ]
     }
   ]
