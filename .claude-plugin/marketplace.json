@@ -15,7 +15,15 @@
       "source": "./plugins/lambdakit-ts",
       "strict": false,
       "version": "1.0.0",
-      "skills": ["./skills/lambdakit-ts"]
+      "skills": ["./skills/lambdakit-ts"],
+      "keywords": [
+        "aws",
+        "aws-lambda",
+        "cloud",
+        "api-gateway",
+        "cloud",
+        "serverless"
+      ]
     },
     {
       "name": "zod",
@@ -23,7 +31,17 @@
       "source": "./plugins/zod",
       "strict": false,
       "version": "1.0.0",
-      "skills": ["./skills/zod"]
+      "skills": ["./skills/zod"],
+      "keywords": [
+        "zod",
+        "validation-library",
+        "schema-validation",
+        "typescript",
+        "validation",
+        "runtime-validation",
+        "type-safety",
+        "zod-v4"
+      ]
     },
     {
       "name": "commit-message",
@@ -31,7 +49,14 @@
       "source": "./plugins/commit-message",
       "strict": false,
       "version": "1.0.0",
-      "skills": ["./skills/commit-message"]
+      "skills": ["./skills/commit-message"],
+      "keywords": [
+        "git",
+        "commit-messages",
+        "commit",
+        "gitmoji",
+        "commits"
+      ]
     }
   ]
 }
