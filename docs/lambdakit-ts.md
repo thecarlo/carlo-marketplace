@@ -28,7 +28,7 @@ Add this marketplace to Claude Code and install the skill:
 
 ```bash
 # Add the marketplace
-/plugin marketplace add thecarlo/claude-marketplace
+/plugin marketplace add thecarlo/carlo-marketplace
 
 # Install the skill
 /plugin install lambdakit-ts@carlo-marketplace

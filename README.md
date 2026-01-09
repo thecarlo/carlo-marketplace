@@ -16,7 +16,7 @@ A collection of custom Claude skills for software development.
 First, add this marketplace to Claude Code:
 
 ```bash
-/plugin marketplace add thecarlo/claude-marketplace
+/plugin marketplace add thecarlo/carlo-marketplace
 ```
 
 Then install the skill(s) you want:
