@@ -30,10 +30,10 @@ Add this marketplace to Claude Code and install the skill:
 
 ```bash
 # Add the marketplace
-/plugin marketplace add thecarlo/claude-skills
+/plugin marketplace add thecarlo/claude-marketplace
 
 # Install the skill
-/plugin install zod@carlo-skills
+/plugin install zod@carlo-marketplace
 ```
 
 ### Option 2: Clone this repository

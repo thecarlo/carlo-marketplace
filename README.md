@@ -16,19 +16,19 @@ A collection of custom Claude skills for software development.
 First, add this marketplace to Claude Code:
 
 ```bash
-/plugin marketplace add thecarlo/claude-skills
+/plugin marketplace add thecarlo/claude-marketplace
 ```
 
 Then install the skill(s) you want:
 
 **For LambdaKit TS:**
 ```bash
-/plugin install lambdakit-ts@carlo-skills
+/plugin install lambdakit-ts@carlo-marketplace
 ```
 
 **For Zod:**
 ```bash
-/plugin install zod@carlo-skills
+/plugin install zod@carlo-marketplace
 ```
 
 ### Option 2: Clone this repository
@@ -58,7 +58,7 @@ To uninstall individual skills:
 To remove the marketplace entirely:
 
 ```bash
-/plugin marketplace remove carlo-skills
+/plugin marketplace remove carlo-marketplace
 ```
 
 ## Usage
