@@ -5,8 +5,6 @@ description: A TypeScript (TS) toolkit for bootstrapping AWS Lambda functions wi
 
 # LambdaKit TS
 
-## Quickstart
-
 Bootstrap a new TypeScript AWS Lambda using the instructions below.
 
 If the desired event source is not specified, create a Lambda with API Gateway as the event source.

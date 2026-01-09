@@ -22,6 +22,13 @@
       "source": "./",
       "strict": false,
       "skills": ["./skills/zod"]
+    },
+    {
+      "name": "commit-message",
+      "description": "Create git commit messages based on current staged changes with support for git emoji messages",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/commit-message"]
     }
   ]
 }
