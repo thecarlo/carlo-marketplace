@@ -6,13 +6,12 @@
   },
   "metadata": {
     "description": "A collection of Claude skills",
-    "version": "1.0.0",
-    "pluginRoot": "./skills"
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "lambdakit-ts",
-      "source": "lambdakit-ts",
+      "source": "./skills/lambdakit-ts",
       "description": "TypeScript toolkit for bootstrapping AWS Lambda functions with production-ready best practices",
       "version": "1.0.0",
       "author": {
