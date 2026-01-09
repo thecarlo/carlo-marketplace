@@ -13,5 +13,5 @@
     "serverless",
     "bootstrap"
   ],
-  "skills": "./"
+  "skills": "./lambdakit-ts"
 }

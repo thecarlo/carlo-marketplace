@@ -53,10 +53,10 @@ cp -r claude-skills/skills/* ~/.config/claude/skills/
 
 ### Using LambdaKit TS
 
-In your Claude Code session, ask Claude to use it:
+In your Claude Code session, in a new directory where you want to create a new lambda, ask Claude to use it:
 
 ```
-Bootstrap a new TypeScript Lambda function for API Gateway using the lambdakit-ts skill.
+Bootstrap a new Lambda function using the lambdakit-ts skill
 ```
 
 The skill will:
