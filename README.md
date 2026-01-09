@@ -49,31 +49,11 @@ git clone https://github.com/thecarlo/claude-skills.git
 cp -r claude-skills/skills/* ~/.config/claude/skills/
 ```
 
-### Option 3: Manual installation
-
-1. Create your Claude Code skills directory if it doesn't exist:
-
-```bash
-mkdir -p ~/.config/claude/skills
-```
-
-2. Copy individual skills from this repository to your skills directory:
-
-```bash
-cp -r skills/lambdakit-ts ~/.config/claude/skills/
-```
-
 ## Usage
 
 ### Using LambdaKit TS
 
-In your Claude Code session, invoke the skill:
-
-```
-/lambdakit-ts
-```
-
-Or ask Claude to use it:
+In your Claude Code session, ask Claude to use it:
 
 ```
 Bootstrap a new TypeScript Lambda function for API Gateway using the lambdakit-ts skill.
