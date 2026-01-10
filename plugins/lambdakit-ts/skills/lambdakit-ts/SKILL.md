@@ -9,24 +9,23 @@ Bootstrap a new TypeScript AWS Lambda using the instructions below.
 
 If the desired event source is not specified, create a Lambda with API Gateway as the event source.
 
-If a name is not specified, use the name of the current directory.
-
 Start with:
 
-1. create package.json with `npm init -y`
-2. install dev dependencies `npm install -D @types/aws-lambda @types/node esbuild typescript prettier eslint eslint-plugin-prettier eslint-plugin-check-file eslint-config-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin`
-3. install runtime dependencies `npm install @aws-lambda-powertools/logger @middy/core`
-4. run `mkdir -p src/functions src/interfaces` to create the directories
-5. copy the provided `assets/tsconfig.json` file
-6. copy the provided `assets/eslint.config.mjs` file
-7. copy the provided `assets/index.ts` file and change the `serviceName` value according to the provided name or directory name
-8. copy the provided `assets/local-invoke.ts` file and change the `functionName` value according to the provided name or directory name
-9. copy the provided `assets/greet.ts` file and copy it to the `src/functions/` directory
-10. copy the provided `build.sh` file and run `chmod + x` to assign execute permissions
-11. copy the provided `.prettierrc` file
-12. copy the provided `.gitignore` file
-13. add scripts to `package.json` from the section `add package.json scripts` below
-14. when done, add instructions to the output as per the `Final Instructions` section below
+1. If a name is not specified, generate an interactive prompt and ask the user what `what should the lambda be called?`, and pre-populate it with the name of the current directory in kebab-case.
+2. create package.json with `npm init -y`
+3. install dev dependencies `npm install -D @types/aws-lambda @types/node esbuild typescript prettier eslint eslint-plugin-prettier eslint-plugin-check-file eslint-config-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+4. install runtime dependencies `npm install @aws-lambda-powertools/logger @middy/core`
+5. run `mkdir -p src/functions src/interfaces` to create the directories
+6. copy the provided `assets/tsconfig.json` file
+7. copy the provided `assets/eslint.config.mjs` file
+8. copy the provided `assets/index.ts` file and change the `serviceName` value according to the provided name or directory name
+9. copy the provided `assets/local-invoke.ts` file and change the `functionName` value according to the provided name or directory name
+10. copy the provided `assets/greet.ts` file and copy it to the `src/functions/` directory
+11. copy the provided `build.sh` file and run `chmod + x` to assign execute permissions
+12. copy the provided `.prettierrc` file
+13. copy the provided `.gitignore` file
+14. add scripts to `package.json` from the section `add package.json scripts` below
+15. when done, add instructions to the output as per the `Final Instructions` section below
 
 ## Code Organization Principles
 
