@@ -68,19 +68,25 @@ Then from within Claude Code, uninstall the plugin:
 
 In your Claude Code session, in a new directory where you want to create a new lambda, ask Claude to use it:
 
-### Prompt 1
+### Prompt 1 (auto detect skill)
 
 ```
-/lambdakit-ts
+create a new typescript lambda
 ```
 
 ### Prompt 2
 
 ```
-/lambdakit-ts bootstrap a new lambda
+/lambdakit-ts
 ```
 
 ### Prompt 3
+
+```
+/lambdakit-ts bootstrap a new lambda
+```
+
+### Prompt 4
 
 ```
 bootstrap a new lambda using the lambdakit-ts skill

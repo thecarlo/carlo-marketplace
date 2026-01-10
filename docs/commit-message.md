@@ -70,19 +70,25 @@ Then from within Claude Code, uninstall the plugin:
 
 In your Claude Code session, after staging your changes with `git add`, ask Claude to create a commit message:
 
-### Prompt 1
+### Prompt 1 (auto detect skill)
 
 ```
-/commit-message
+create a git commit message
 ```
 
 ### Prompt 2
 
 ```
-/commit-message create a commit message
+/commit-message
 ```
 
 ### Prompt 3
+
+```
+/commit-message create a commit message
+```
+
+### Prompt 4
 
 ```
 use the commit-message skill to create a commit message
@@ -93,10 +99,12 @@ use the commit-message skill to create a commit message
 To include git emojis in your commit message:
 
 ```
-/commit-message with emojis
+create a git commit message with a gitmoji
 ```
 
-Or:
+```
+/commit-message with emojis
+```
 
 ```
 use the commit-message skill to create a commit with an emoji

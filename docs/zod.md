@@ -70,19 +70,25 @@ Then from within Claude Code, uninstall the plugin:
 
 In your Claude Code session, ask Claude to use the Zod skill for validation tasks:
 
-### Prompt 1
+### Prompt 1 (auto detect skill)
 
 ```
-/zod
+implement zod validation
 ```
 
 ### Prompt 2
 
 ```
-/zod create validation schema for user registration
+/zod
 ```
 
 ### Prompt 3
+
+```
+/zod create validation schema for user registration
+```
+
+### Prompt 4
 
 ```
 create a validation schema for user registration using the zod skill

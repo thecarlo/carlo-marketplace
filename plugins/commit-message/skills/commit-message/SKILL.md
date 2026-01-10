@@ -9,34 +9,34 @@ description: Create git commit messages based on current staged changes. Has sup
 
 When this skill is invoked, follow these steps:
 
-1. **Check for staged changes**: Run `git diff --cached` to see what changes are currently staged for commit
-2. **If the user hasn't staged any changes**:
-   - Generate an interactive yes/no prompt artifact asking "No changes have been staged yet. Would you like me to stage your changes?"
+1. **Check if there are staged changes**: Run `git status`
+2. If the output of `git status` contains `Changes not staged for commit`, then:
+   - Generate an interactive yes/no prompt artifact asking "You have unstaged changes. Would you like me to stage your changes?"
    - Upon confirmation, proceed by adding the staged changes
-3. **If there are no changes to stage**:
+3. If the output of `git status` contains `nothing to commit, working tree clean`, then:
    - Display response to the user: "No changes found. Please make changes to your files before trying to commit."
    - Stop and exit the skill.
-4. **Get repository status**: Run `git status` to understand which files are affected
-5. **Analyze the changes**: Review the diff output to understand:
+4. Only proceed if all changes have been staged, and there are no unstaged changes.
+5. Get details of staged changes: Run `git diff --cached` to get the details of the staged changes. Review the diff output to understand:
    - What files were modified
    - What functionality changed
    - The purpose and impact of the changes
-6. **Determine emoji usage**:
+6. Determine emoji usage:
    - Search the user's original request for keywords like "emoji", "gitmoji", "with emoji", or "use emoji"
-   - **By default (if no emoji keywords found)**: Generate the commit message in standard format WITHOUT any emojis
-   - **If the user explicitly asks for emojis**: Add emojis using the mapping table below, placing the emoji before the type
-7. **Generate commit message**: Create a commit message following the semantic commit format below, ensuring:
+   - By default (if no emoji keywords found): Generate the commit message in standard format WITHOUT any emojis
+   - If the user explicitly asks for emojis: Add emojis using the mapping table below, placing the emoji before the type
+7. Generate commit message: Create a commit message following the semantic commit format below, ensuring:
    - Appropriate commit type (feat, fix, docs, etc.)
    - Only put a gitmoji in first line if user specified gitmoji or emoji
    - Relevant scope based on affected codebase area
    - Clear, imperative subject line under 50 characters
    - Body and footer if needed for complex changes
    - Add line breaks in the body if there are multiple sentences.
-8. **Present to user for commit approval**:
+8. Present to user for commit approval:
    - Display the formatted commit message for review (without showing the git command)
    - Generate an interactive yes/no prompt artifact asking "Would you like me to create this commit?"
    - Upon confirmation, proceed to create the commit
-9. **Present to user for push confirmation**:
+9. Present to user for push confirmation:
    - Once the commit is created, generate an interactive yes/no prompt asking "Would you like me to push this to the remote?"
    - Upon confirmation, proceed with the push operation
 
