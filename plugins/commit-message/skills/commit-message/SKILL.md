@@ -22,8 +22,15 @@ When this skill is invoked, follow these steps:
    - Clear, imperative subject line under 50 characters
    - Body and footer if needed for complex changes
    - Add line breaks in the body if there are multiple sentences.
-6. **Present to user**: Show the formatted commit message for review without displaying the git command. Ask: "Would you like me to create this commit?"
-7. Once the commit is created, ask the user: "Would you like me to push this to the remote?"
+6. **Present to user for commit approval**:
+   - Display the formatted commit message for review (without showing the git command)
+   - Generate an interactive yes/no prompt artifact asking "Would you like me to create this commit?"
+   - User selects using arrow keys, number keys (1/2), or by typing 1 or 2
+   - Upon confirmation, proceed to create the commit
+7. **Present to user for push confirmation**:
+   - Once the commit is created, generate an interactive yes/no prompt artifact asking "Would you like me to push this to the remote?"
+   - User selects using arrow keys, number keys (1/2), or by typing 1 or 2
+   - Upon confirmation, proceed with the push operation
 
 **If no changes are staged**: Inform the user that no changes are staged and suggest they use `git add` to stage files first.
 
