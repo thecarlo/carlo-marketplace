@@ -62,7 +62,7 @@
     {
       "name": "commit-message",
       "description": "Git commit message plugin to create a git commit message",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "source": "./plugins/commit-message",
       "strict": false,
       "skills": ["./skills/commit-message"],
