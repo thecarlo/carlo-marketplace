@@ -10,29 +10,35 @@ description: Create git commit messages based on current staged changes. Has sup
 When this skill is invoked, follow these steps:
 
 1. **Check for staged changes**: Run `git diff --cached` to see what changes are currently staged for commit
-2. **Get repository status**: Run `git status` to understand which files are affected
-3. **Analyze the changes**: Review the diff output to understand:
+2. **If the user hasn't staged any changes**:
+   - Generate an interactive yes/no prompt artifact asking "No changes have been staged yet. Would you like me to stage your changes?"
+   - Upon confirmation, proceed by adding the staged changes
+3. **If there are no changes to stage**:
+   - Display response to the user: "No changes found. Please make changes to your files before trying to commit."
+   - Stop and exit the skill.
+4. **Get repository status**: Run `git status` to understand which files are affected
+5. **Analyze the changes**: Review the diff output to understand:
    - What files were modified
    - What functionality changed
    - The purpose and impact of the changes
-4. **Determine emoji usage**: By default, DO NOT include git emojis unless the user explicitly requested them. If emojis are requested, use the emoji mapping table below.
-5. **Generate commit message**: Create a commit message following the semantic commit format below, ensuring:
+6. **Determine emoji usage**:
+   - Search the user's original request for keywords like "emoji", "gitmoji", "with emoji", or "use emoji"
+   - **By default (if no emoji keywords found)**: Generate the commit message in standard format WITHOUT any emojis
+   - **If the user explicitly asks for emojis**: Add emojis using the mapping table below, placing the emoji before the type
+7. **Generate commit message**: Create a commit message following the semantic commit format below, ensuring:
    - Appropriate commit type (feat, fix, docs, etc.)
+   - Only put a gitmoji in first line if user specified gitmoji or emoji
    - Relevant scope based on affected codebase area
    - Clear, imperative subject line under 50 characters
    - Body and footer if needed for complex changes
    - Add line breaks in the body if there are multiple sentences.
-6. **Present to user for commit approval**:
+8. **Present to user for commit approval**:
    - Display the formatted commit message for review (without showing the git command)
    - Generate an interactive yes/no prompt artifact asking "Would you like me to create this commit?"
-   - User selects using arrow keys, number keys (1/2), or by typing 1 or 2
    - Upon confirmation, proceed to create the commit
-7. **Present to user for push confirmation**:
-   - Once the commit is created, generate an interactive yes/no prompt artifact asking "Would you like me to push this to the remote?"
-   - User selects using arrow keys, number keys (1/2), or by typing 1 or 2
+9. **Present to user for push confirmation**:
+   - Once the commit is created, generate an interactive yes/no prompt asking "Would you like me to push this to the remote?"
    - Upon confirmation, proceed with the push operation
-
-**If no changes are staged**: Inform the user that no changes are staged and suggest they use `git add` to stage files first.
 
 ## Commands to get details of staged changes
 
