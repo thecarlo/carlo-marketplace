@@ -5,7 +5,7 @@
     "email": "89q05pd6i@mozmail.com"
   },
   "metadata": {
-    "description": "A collection of Claude skills",
+    "description": "A collection of Claude skills: Lambdakit to bootstrap Lambdas, commit-message to create Git commit messages and zod, a Zod v4 validation specialist.",
     "version": "1.0.0"
   },
   "plugins": [
