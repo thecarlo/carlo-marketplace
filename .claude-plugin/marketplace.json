@@ -12,7 +12,7 @@
     {
       "name": "lambdakit-ts",
       "description": "TypeScript toolkit for bootstrapping AWS Lambda functions",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "source": "./plugins/lambdakit-ts",
       "strict": false,
       "skills": ["./skills/lambdakit-ts"],

@@ -12,20 +12,25 @@ If the desired event source is not specified, create a Lambda with API Gateway a
 Start with:
 
 1. If a name is not specified, generate an interactive prompt and ask the user what `what should the lambda be called?`, and pre-populate it with the name of the current directory in kebab-case.
-2. create package.json with `npm init -y`
-3. install dev dependencies `npm install -D @types/aws-lambda @types/node esbuild typescript prettier eslint eslint-plugin-prettier eslint-plugin-check-file eslint-config-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin`
-4. install runtime dependencies `npm install @aws-lambda-powertools/logger @middy/core`
-5. run `mkdir -p src/functions src/interfaces` to create the directories
-6. copy the provided `assets/tsconfig.json` file
-7. copy the provided `assets/eslint.config.mjs` file
-8. copy the provided `assets/index.ts` file and change the `serviceName` value according to the provided name or directory name
-9. copy the provided `assets/local-invoke.ts` file and change the `functionName` value according to the provided name or directory name
-10. copy the provided `assets/greet.ts` file and copy it to the `src/functions/` directory
-11. copy the provided `build.sh` file and run `chmod + x` to assign execute permissions
-12. copy the provided `.prettierrc` file
-13. copy the provided `.gitignore` file
-14. add scripts to `package.json` from the section `add package.json scripts` below
-15. when done, add instructions to the output as per the `Final Instructions` section below
+2. Before proceeding further, present the user with an interactive prompt: `The Lambda will be created at ${path}. Please confirm`
+   Then give the user 2 options:
+   - Yes — proceed with creating the Lambda at this path
+   - Enter a directory name — a new subdirectory with this name will be created in the current directory
+     If a new directory name is entered, use this value in kebab-case, and create the lambda in the new directory.
+3. create package.json with `npm init -y`
+4. install dev dependencies `npm install -D @types/aws-lambda @types/node esbuild typescript prettier eslint eslint-plugin-prettier eslint-plugin-check-file eslint-config-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+5. install runtime dependencies `npm install @aws-lambda-powertools/logger @middy/core`
+6. run `mkdir -p src/functions src/interfaces` to create the directories
+7. copy the provided `assets/tsconfig.json` file
+8. copy the provided `assets/eslint.config.mjs` file
+9. copy the provided `assets/index.ts` file and change the `serviceName` value according to the provided name or directory name
+10. copy the provided `assets/local-invoke.ts` file and change the `functionName` value according to the provided name or directory name
+11. copy the provided `assets/greet.ts` file and copy it to the `src/functions/` directory
+12. copy the provided `build.sh` file and run `chmod + x` to assign execute permissions
+13. copy the provided `.prettierrc` file
+14. copy the provided `.gitignore` file
+15. add scripts to `package.json` from the section `add package.json scripts` below
+16. when done, add instructions to the output as per the `Final Instructions` section below
 
 ## Code Organization Principles
 
