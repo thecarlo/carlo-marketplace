@@ -22,7 +22,8 @@
         "cloud",
         "api-gateway",
         "cloud",
-        "serverless"
+        "serverless",
+        "typescript"
       ],
       "author": {
         "name": "Carlo van Wyk",
@@ -46,6 +47,7 @@
         "typescript",
         "validation",
         "runtime-validation",
+        "typescript-validation",
         "type-safety",
         "zod-v4"
       ],
@@ -66,10 +68,13 @@
       "skills": ["./skills/commit-message"],
       "keywords": [
         "git",
-        "commit-messages",
-        "commit",
+        "git-commit",
         "gitmoji",
-        "commits"
+        "commit",
+        "version-control",
+        "commit-messages",
+        "commits",
+        "productivity"
       ],
       "author": {
         "name": "Carlo van Wyk",
@@ -77,7 +82,7 @@
       },
       "repository": "https://github.com/thecarlo/carlo-marketplace",
       "license": "MIT",
-      "category": "development"
+      "category": "git"
     }
   ]
 }
