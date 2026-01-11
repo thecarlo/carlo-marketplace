@@ -1,10 +1,11 @@
-# LambdaKit TS
+# `lambdakit-ts` Claude Skill
 
-Bootstrap production-ready AWS Lambda functions with TypeScript using industry best practices. Includes serverless framework integration, proper error handling, logging, and local invocation setup out of the box.
+A Claude skill that bootstraps production-ready AWS Lambda functions with TypeScript using industry best practices. Includes serverless framework integration, proper error handling, logging, and local invocation setup out of the box.
 
 ## What it does
 
 - Scaffolds complete TypeScript Lambda project with production-ready tooling (ESBuild, Prettier, ESLint)
+- Provides a `/lambdakit-ts` slash command for quick access.
 - Sets up AWS Lambda Powertools for logging and Middy middleware for cross-cutting concerns
 - Enforces clean code architecture with SRP, aliased imports, and strict TypeScript
 - Includes local invocation setup and build scripts for testing and deployment
@@ -115,15 +116,15 @@ your-lambda/
 
 Your `package.json` includes the following scripts:
 
-| Script | Command | Description |
-|--------|---------|-------------|
-| `typecheck` | `tsc --noEmit` | Runs TypeScript type checking without emitting files |
-| `build` | `bash build.sh` | Builds the project using esbuild (creates optimized bundle) |
-| `invoke:local` | `npx tsx src/local-invoke.ts` | Runs the Lambda locally for testing |
-| `prettier` | `prettier --check` | Checks code formatting against Prettier rules |
-| `prettier:fix` | `prettier --write` | Auto-formats all TypeScript and JSON files |
-| `lint` | `eslint .` | Checks code against ESLint rules |
-| `lint:fix` | `eslint . --fix` | Auto-fixes ESLint issues where possible |
+| Script         | Command                       | Description                                                 |
+| -------------- | ----------------------------- | ----------------------------------------------------------- |
+| `typecheck`    | `tsc --noEmit`                | Runs TypeScript type checking without emitting files        |
+| `build`        | `bash build.sh`               | Builds the project using esbuild (creates optimized bundle) |
+| `invoke:local` | `npx tsx src/local-invoke.ts` | Runs the Lambda locally for testing                         |
+| `prettier`     | `prettier --check`            | Checks code formatting against Prettier rules               |
+| `prettier:fix` | `prettier --write`            | Auto-formats all TypeScript and JSON files                  |
+| `lint`         | `eslint .`                    | Checks code against ESLint rules                            |
+| `lint:fix`     | `eslint . --fix`              | Auto-fixes ESLint issues where possible                     |
 
 ## Building Your Lambda
 
@@ -134,6 +135,7 @@ npm run build
 ```
 
 This runs `build.sh`, which uses esbuild to:
+
 - Compile TypeScript to JavaScript
 - Bundle all dependencies into a single file
 - Optimize and minify the code

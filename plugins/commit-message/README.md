@@ -1,10 +1,11 @@
-# Commit Message
+# `commit-message` Claude Skill
 
-Generates semantic git commit messages based on your staged changes with optional emoji support. Analyzes your diffs and creates conventional commit messages following best practices.
+A Claude skill that generates semantic git commit messages based on your staged changes with optional emoji support. Analyzes your diffs and creates conventional commit messages following best practices.
 
 ## What it does
 
 - Analyzes staged changes and generates semantic commit messages with proper type classification
+- Provides a `/commit-message` slash command for quick access.
 - Supports optional emoji prefixes and follows conventional commit format
 - Reviews recent commit history to maintain consistent style
 - Asks for user approval before creating commits or pushing to remote

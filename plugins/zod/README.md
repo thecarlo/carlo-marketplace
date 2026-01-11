@@ -1,10 +1,11 @@
-# Zod
+# `zod` Claude Skill
 
-Specialist for implementing and upgrading to Zod v4 validation schemas in TypeScript applications. Helps you create type-safe runtime validation with proper error handling and TypeScript inference, including migration from Zod v3.
+A Claude skill that specializes in implementing and upgrading to Zod v4 validation schemas in TypeScript applications. Helps you create type-safe runtime validation with proper error handling and TypeScript inference, including migration from Zod v3.
 
 ## What it does
 
 - Provides comprehensive Zod v4 implementation guidance with automatic version detection and v3 to v4 upgrade support
+- Provides a `/zod` slash command for quick access.
 - Generates properly structured schema, interface, and validation files following SRP clean code principles
 - Includes detailed error handling utilities and type-safe validation with z.infer
 - Supports async validation, custom refinements, and common use cases (API, forms, environment variables)
