@@ -62,19 +62,15 @@
     {
       "name": "commit-message",
       "description": "Git commit message plugin to create a git commit message",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "source": "./plugins/commit-message",
       "strict": false,
       "skills": ["./skills/commit-message"],
       "keywords": [
         "git",
         "git-commit",
-        "gitmoji",
-        "commit",
-        "version-control",
-        "commit-messages",
-        "commits",
-        "productivity"
+        "commit-message",
+        "version-control"
       ],
       "author": {
         "name": "Carlo van Wyk",
@@ -82,7 +78,7 @@
       },
       "repository": "https://github.com/thecarlo/carlo-marketplace",
       "license": "MIT",
-      "category": "git"
+      "category": "version-control"
     }
   ]
 }

@@ -174,23 +174,10 @@ Here's the suggested commit message based on your staged changes:
 ​`
 <generated commit message>
 ​`
-
-To commit these changes, run:
-​`bash
-git commit -m "<generated message>"
-​`
-
-Or for a multi-line commit with body:
-​`bash
-git commit -m "<subject line>" -m "<body text>"
-​`
 ```
 
 ## Important Notes
 
-- **DO NOT run `git commit` without user approval**: Only generate the message, then ask for user approval to run the commit command
-- **DO NOT add Co-Authored-By trailers**: Commits should only show the user as the author. Never add "Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>" or any similar co-author trailers to commit messages
-- **DO NOT stage additional files**: Only analyze what's already staged
-- **If multiple unrelated changes are staged**: Suggest the user split them into separate commits for better history
-- **Use recent commit history for context**: Run `git log --oneline -10` to understand the existing commit style and follow the same patterns
-- **Analyze all staged files**: If there are many staged files, review each one to ensure the commit message accurately reflects all changes
+- Do not run `git commit` or `git push` without user approval
+- Do not add Co-Authored-By trailers: Commits should only show the user as the author. Never add "Co-Authored-By: Claude Sonnet <noreply@anthropic.com>" or any similar co-author trailers to commit messages
+- Analyze all staged files: If there are many staged files, review each one to ensure the commit message accurately reflects all changes
