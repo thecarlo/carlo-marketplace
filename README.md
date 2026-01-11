@@ -15,7 +15,7 @@ Generates semantic git commit messages based on your staged changes with optiona
 /plugin install commit-message@carlo-marketplace
 ```
 
-[View detailed documentation](docs/commit-message.md)
+[View detailed documentation](plugins/commit-message/README.md)
 
 ---
 
@@ -30,7 +30,7 @@ Bootstrap production-ready AWS Lambda functions with TypeScript using industry b
 /plugin install lambdakit-ts@carlo-marketplace
 ```
 
-[View detailed documentation](docs/lambdakit-ts.md)
+[View detailed documentation](plugins/lambdakit-ts/README.md)
 
 ---
 
@@ -45,7 +45,7 @@ Specialist for implementing and upgrading to Zod v4 validation schemas in TypeSc
 /plugin install zod@carlo-marketplace
 ```
 
-[View detailed documentation](docs/zod.md)
+[View detailed documentation](plugins/zod/README.md)
 
 ---
 
