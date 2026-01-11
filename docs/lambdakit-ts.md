@@ -4,21 +4,10 @@ Bootstrap production-ready AWS Lambda functions with TypeScript using industry b
 
 ## What it does
 
-- Scaffolds a complete TypeScript AWS Lambda project structure
-- Configures production-ready tooling (TypeScript, ESBuild, Prettier, ESLint)
-- Sets up AWS Lambda Powertools for structured logging
-- Configures Middy middleware for cross-cutting concerns
-- Enforces clean code architecture with SRP (Single Responsibility Principle)
-- Includes local invocation setup for testing
-
-## Key Features
-
-- API Gateway event source support (default)
-- Aliased imports configured via tsconfig
-- Production-grade error handling and logging
-- Build and deployment scripts included
-- Comprehensive linting and formatting rules
-- Type-safe development with TypeScript strict mode
+- Scaffolds complete TypeScript Lambda project with production-ready tooling (ESBuild, Prettier, ESLint)
+- Sets up AWS Lambda Powertools for logging and Middy middleware for cross-cutting concerns
+- Enforces clean code architecture with SRP, aliased imports, and strict TypeScript
+- Includes local invocation setup and build scripts for testing and deployment
 
 ## Installation
 
@@ -100,15 +89,6 @@ create a new typescript lambda
 ```
 bootstrap a new lambda using the lambdakit-ts skill
 ```
-
-The skill will:
-
-1. Initialize a new npm project
-2. Install all required dependencies
-3. Create the proper directory structure
-4. Configure TypeScript, ESLint, and Prettier
-5. Generate starter code with best practices
-6. Provide instructions for building and testing
 
 ## What Gets Created
 

@@ -4,23 +4,10 @@ Specialist for implementing and upgrading to Zod v4 validation schemas in TypeSc
 
 ## What it does
 
-- Provides comprehensive guidance for Zod v4 validation implementation
-- Checks project Zod version and offers upgrade path from v3 to v4
-- Implements schema design patterns following clean code principles
-- Generates properly structured schema, interface, and validation files
-- Provides detailed error handling with Zod's issues array
-- Upgrades from Zod 3 to Zod 4
-
-## Key Features
-
-- Zod v4 exclusive syntax and breaking changes reference
-- Automatic version detection with upgrade prompts
-- Schema organization with SRP (single export per file)
-- Error formatting utilities (flattenError, treeifyError, prettifyError)
-- Type inference with z.infer for compile-time type safety
-- Comprehensive quick reference tables for v3 to v4 migration
-- Async validation and custom refinement patterns
-- API, form, and environment variable validation use cases
+- Provides comprehensive Zod v4 implementation guidance with automatic version detection and v3 to v4 upgrade support
+- Generates properly structured schema, interface, and validation files following SRP clean code principles
+- Includes detailed error handling utilities and type-safe validation with z.infer
+- Supports async validation, custom refinements, and common use cases (API, forms, environment variables)
 
 ## Installation
 
@@ -101,30 +88,4 @@ implement zod validation
 
 ```
 create a validation schema for user registration using the zod skill
-```
-
-The skill will:
-
-1. Check your project's Zod version (v3 or v4)
-2. Offer to upgrade from v3 to v4 if needed
-3. Create properly structured schema files in `src/schemas/`
-4. Generate corresponding interface files in `src/interfaces/`
-5. Implement validation functions in `src/functions/`
-6. Use Zod v4 syntax exclusively (top-level validators, error parameter)
-7. Provide comprehensive error handling with formatted errors
-
-## What Gets Created
-
-After using the Zod skill, you'll have:
-
-```
-your-project/
-├── src/
-│   ├── schemas/
-│   │   └── user-registration.schema.ts    # Zod schema definition
-│   ├── interfaces/
-│   │   └── user-registration.interface.ts # Type-safe interface
-│   └── functions/
-│       └── validate-user-registration.ts  # Validation function with error handling
-└── package.json                           # With zod@^4.0.0
 ```

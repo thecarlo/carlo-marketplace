@@ -4,23 +4,10 @@ Generates semantic git commit messages based on your staged changes with optiona
 
 ## What it does
 
-- Analyzes your staged git changes to understand what was modified
-- Generates semantic commit messages following conventional commit format
-- Supports optional git emoji prefixes for visual commit logs
+- Analyzes staged changes and generates semantic commit messages with proper type classification
+- Supports optional emoji prefixes and follows conventional commit format
 - Reviews recent commit history to maintain consistent style
-- Provides clear commit type classification (feat, fix, docs, etc.)
-- Asks for user approval before creating the commit
-
-## Key Features
-
-- Automatic change analysis from `git diff --staged`
-- Semantic commit format with type, scope, and description
-- Optional emoji support with type-specific mappings
-- Multi-line commit messages with body and footer sections
-- Issue reference support (Closes #123, Fixes #456)
-- Follows conventional commit guidelines
-- Imperative mood and proper capitalization
-- Co-authored by Claude attribution
+- Asks for user approval before creating commits or pushing to remote
 
 ## Installation
 
@@ -77,7 +64,7 @@ To remove the marketplace entirely:
 
 ## Usage
 
-In your Claude Code session, after staging your changes with `git add`, ask Claude to create a commit message:
+In your Claude Code session, use any of the prompts below:
 
 ### Prompt 1 (auto detect skill)
 
@@ -85,50 +72,29 @@ In your Claude Code session, after staging your changes with `git add`, ask Clau
 create a git commit message
 ```
 
+Creates a commit message without a gitmoji.
+
 ### Prompt 2
 
 ```
 /commit-message
 ```
 
+Creates a commit message without a gitmoji.
+
 ### Prompt 3
 
 ```
-/commit-message create a commit message
+/commit-message gitmoji
 ```
+
+Creates a commit message with a gitmoji.
 
 ### Prompt 4
 
 ```
 use the commit-message skill to create a commit message
 ```
-
-### With Emoji Support
-
-To include git emojis in your commit message:
-
-```
-create a git commit message with a gitmoji
-```
-
-```
-/commit-message with emojis
-```
-
-```
-use the commit-message skill to create a commit with an emoji
-```
-
-The skill will:
-
-1. Check for staged changes using `git diff --staged`
-2. Analyze the changes to understand what was modified
-3. Review recent commit history for style consistency
-4. Generate a semantic commit message with appropriate type and scope
-5. Include emoji prefix if requested
-6. Display the commit message for your review
-7. Ask for your approval before creating the commit
-8. Execute the git commit with co-authorship attribution
 
 ## Commit Message Format
 
@@ -168,8 +134,6 @@ feat(auth): add two-factor authentication
 
 Implements TOTP-based 2FA for enhanced security. Users can enable
 2FA in their account settings and use authenticator apps.
-
-Closes #234
 ```
 
 **With emoji:**
@@ -179,57 +143,4 @@ Closes #234
 
 Implements TOTP-based 2FA for enhanced security. Users can enable
 2FA in their account settings and use authenticator apps.
-
-Closes #234
 ```
-
-**Simple commit:**
-
-```
-fix(api): handle null responses correctly
-```
-
-**With emoji:**
-
-```
-🐛 fix(api): handle null responses correctly
-```
-
-## Guidelines
-
-The skill follows these commit message best practices:
-
-- **Type classification**: Accurately identifies the nature of changes (feat, fix, docs, etc.)
-- **Scope definition**: Identifies the affected area of the codebase
-- **Subject line**: Clear, imperative mood, under 50 characters, capitalized
-- **Body text**: Optional detailed explanation wrapped at 72 characters
-- **Issue references**: Includes footer with "Closes #123" or "Fixes #456" when relevant
-- **Consistency**: Matches the style of recent commits in your repository
-- **Co-authorship**: Adds Claude Sonnet 4.5 as co-author
-
-## What Happens
-
-When you use the commit-message skill:
-
-1. The skill checks your staged changes
-2. If no changes are staged, you'll be prompted to stage files first
-3. The skill analyzes the diff to understand modifications
-4. It reviews recent commits to match your repository's style
-5. A commit message is generated and displayed for review
-6. You're asked: "Would you like me to create this commit for you?"
-7. Upon approval, the commit is created with co-authorship attribution
-8. The commit hash is displayed for confirmation
-
-## Requirements
-
-- Git repository (the skill works within git repositories)
-- Staged changes (use `git add` to stage files before using the skill)
-- Claude Code CLI environment
-
-## Tips
-
-- Stage related changes together for better commit messages
-- Use the skill consistently to maintain clean commit history
-- Add emojis if your team prefers visual commit logs
-- Review the generated message before approving
-- Split unrelated changes into separate commits for clarity
