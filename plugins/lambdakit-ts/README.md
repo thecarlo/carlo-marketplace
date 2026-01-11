@@ -110,3 +110,83 @@ your-lambda/
 ├── .gitignore
 └── package.json
 ```
+
+## Available Scripts
+
+Your `package.json` includes the following scripts:
+
+| Script | Command | Description |
+|--------|---------|-------------|
+| `typecheck` | `tsc --noEmit` | Runs TypeScript type checking without emitting files |
+| `build` | `bash build.sh` | Builds the project using esbuild (creates optimized bundle) |
+| `invoke:local` | `npx tsx src/local-invoke.ts` | Runs the Lambda locally for testing |
+| `prettier` | `prettier --check` | Checks code formatting against Prettier rules |
+| `prettier:fix` | `prettier --write` | Auto-formats all TypeScript and JSON files |
+| `lint` | `eslint .` | Checks code against ESLint rules |
+| `lint:fix` | `eslint . --fix` | Auto-fixes ESLint issues where possible |
+
+## Building Your Lambda
+
+### Build the project
+
+```bash
+npm run build
+```
+
+This runs `build.sh`, which uses esbuild to:
+- Compile TypeScript to JavaScript
+- Bundle all dependencies into a single file
+- Optimize and minify the code
+- Output to `dist/index.js`
+
+The build output is ready for deployment to AWS Lambda.
+
+### Type checking
+
+```bash
+npm run typecheck
+```
+
+Validates TypeScript types without creating output files. Useful for catching type errors during development.
+
+## Local Testing
+
+Test your Lambda locally before deploying:
+
+```bash
+npm run invoke:local
+```
+
+This executes `src/local-invoke.ts`, which simulates an API Gateway event and invokes your Lambda handler locally. Modify this file to test different scenarios.
+
+## Code Quality
+
+### Format code with Prettier
+
+```bash
+# Check formatting
+npm run prettier
+
+# Auto-fix formatting
+npm run prettier:fix
+```
+
+### Lint with ESLint
+
+```bash
+# Check for lint issues
+npm run lint
+
+# Auto-fix lint issues
+npm run lint:fix
+```
+
+## Development Workflow
+
+1. Write your Lambda code following SRP principles
+2. Run `npm run typecheck` to verify types
+3. Run `npm run invoke:local` to test locally
+4. Run `npm run prettier:fix` to format code
+5. Run `npm run lint:fix` to fix linting issues
+6. Run `npm run build` to create deployment bundle
+7. Deploy `dist/index.js` to AWS Lambda
