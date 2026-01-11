@@ -4,7 +4,7 @@ A collection of custom Claude skills for software development.
 
 ## Skills
 
-### Commit Message
+### `commit-message`
 
 Generates semantic git commit messages based on your staged changes with optional emoji support. Analyzes your diffs and creates conventional commit messages following best practices.
 
@@ -15,11 +15,17 @@ Generates semantic git commit messages based on your staged changes with optiona
 /plugin install commit-message@carlo-marketplace
 ```
 
+**Usage:**
+
+```bash
+/commit-message
+```
+
 [View detailed documentation](plugins/commit-message/README.md)
 
 ---
 
-### LambdaKit TS
+### `lambdakit-ts`
 
 Bootstrap production-ready AWS Lambda functions with TypeScript using industry best practices. Includes serverless framework integration, proper error handling, logging, and local invocation setup out of the box.
 
@@ -30,11 +36,17 @@ Bootstrap production-ready AWS Lambda functions with TypeScript using industry b
 /plugin install lambdakit-ts@carlo-marketplace
 ```
 
+**Usage:**
+
+```bash
+/lambdakit-ts
+```
+
 [View detailed documentation](plugins/lambdakit-ts/README.md)
 
 ---
 
-### Zod
+### `zod`
 
 Specialist for implementing and upgrading to Zod v4 validation schemas in TypeScript applications. Helps you create type-safe runtime validation with proper error handling and TypeScript inference, including migration from Zod v3.
 
@@ -43,6 +55,12 @@ Specialist for implementing and upgrading to Zod v4 validation schemas in TypeSc
 ```bash
 /plugin marketplace add thecarlo/carlo-marketplace
 /plugin install zod@carlo-marketplace
+```
+
+**Usage:**
+
+```bash
+/zod
 ```
 
 [View detailed documentation](plugins/zod/README.md)
