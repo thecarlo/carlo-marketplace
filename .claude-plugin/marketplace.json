@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "A collection of Claude skills: Lambdakit to bootstrap Lambdas, commit-message to create Git commit messages and zod, a Zod v4 validation specialist.",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   "plugins": [
     {
@@ -36,7 +36,7 @@
     {
       "name": "zod",
       "description": "A Zod v4 validation specialist for implementing type-safe validation in TypeScript applications",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "source": "./plugins/zod",
       "strict": false,
       "skills": ["./skills/zod"],

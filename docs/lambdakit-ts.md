@@ -1,6 +1,6 @@
 # LambdaKit TS
 
-A TypeScript toolkit for bootstrapping AWS Lambda functions with production-ready best practices.
+Bootstrap production-ready AWS Lambda functions with TypeScript using industry best practices. Includes serverless framework integration, proper error handling, logging, and local invocation setup out of the box.
 
 ## What it does
 
@@ -65,6 +65,12 @@ Then from within Claude Code, uninstall the plugin:
 
 ```bash
 /plugin uninstall lambdakit-ts
+```
+
+To remove the marketplace entirely:
+
+```bash
+/plugin marketplace remove carlo-marketplace
 ```
 
 ## Usage

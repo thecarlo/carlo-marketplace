@@ -1,6 +1,6 @@
 # Commit Message
 
-Create semantic git commit messages based on staged changes with optional emoji support.
+Generates semantic git commit messages based on your staged changes with optional emoji support. Analyzes your diffs and creates conventional commit messages following best practices.
 
 ## What it does
 
@@ -67,6 +67,12 @@ Then from within Claude Code, uninstall the plugin:
 
 ```bash
 /plugin uninstall commit-message
+```
+
+To remove the marketplace entirely:
+
+```bash
+/plugin marketplace remove carlo-marketplace
 ```
 
 ## Usage

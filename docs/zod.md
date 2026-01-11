@@ -1,6 +1,6 @@
 # Zod
 
-A Zod v4 validation specialist for implementing type-safe validation in TypeScript applications.
+Specialist for implementing and upgrading to Zod v4 validation schemas in TypeScript applications. Helps you create type-safe runtime validation with proper error handling and TypeScript inference, including migration from Zod v3.
 
 ## What it does
 
@@ -9,7 +9,7 @@ A Zod v4 validation specialist for implementing type-safe validation in TypeScri
 - Implements schema design patterns following clean code principles
 - Generates properly structured schema, interface, and validation files
 - Provides detailed error handling with Zod's issues array
-- Includes complete migration guide from Zod 3 to Zod 4
+- Upgrades from Zod 3 to Zod 4
 
 ## Key Features
 
@@ -67,6 +67,12 @@ Then from within Claude Code, uninstall the plugin:
 
 ```bash
 /plugin uninstall zod
+```
+
+To remove the marketplace entirely:
+
+```bash
+/plugin marketplace remove carlo-marketplace
 ```
 
 ## Usage
