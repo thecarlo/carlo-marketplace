@@ -48,8 +48,11 @@ Then from within Claude Code, add the marketplace and install the skill:
 # Clone the repository
 git clone https://github.com/thecarlo/carlo-marketplace.git
 
-# Add to your Claude Code plugins directory
+# Option A: Add to your Claude Code plugins directory
 cp -r carlo-marketplace/plugins/commit-message ~/.config/claude/plugins/
+
+# Option B: Add skill directly to your Claude Code skills directory
+cp -r carlo-marketplace/plugins/commit-message/skills/commit-message ~/.config/claude/skills/
 ```
 
 ## Uninstalling

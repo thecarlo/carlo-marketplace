@@ -52,7 +52,7 @@ Install the skill(s) you want:
 # Clone the repository
 git clone https://github.com/thecarlo/carlo-marketplace.git
 
-# Add individual plugins to your Claude Code plugins directory
+# Option A: Add individual plugins to your Claude Code plugins directory
 # For Commit Message:
 cp -r carlo-marketplace/plugins/commit-message ~/.config/claude/plugins/
 
@@ -61,6 +61,16 @@ cp -r carlo-marketplace/plugins/lambdakit-ts ~/.config/claude/plugins/
 
 # For Zod:
 cp -r carlo-marketplace/plugins/zod ~/.config/claude/plugins/
+
+# Option B: Add individual skills directly to your Claude Code skills directory
+# For Commit Message:
+cp -r carlo-marketplace/plugins/commit-message/skills/commit-message ~/.config/claude/skills/
+
+# For LambdaKit TS:
+cp -r carlo-marketplace/plugins/lambdakit-ts/skills/lambdakit-ts ~/.config/claude/skills/
+
+# For Zod:
+cp -r carlo-marketplace/plugins/zod/skills/zod ~/.config/claude/skills/
 ```
 
 ## Uninstalling
