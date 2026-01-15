@@ -29,7 +29,6 @@
         "name": "Carlo van Wyk",
         "email": "89q05pd6i@mozmail.com"
       },
-      "repository": "https://github.com/thecarlo/carlo-marketplace",
       "license": "MIT",
       "category": "development"
     },
@@ -55,7 +54,6 @@
         "name": "Carlo van Wyk",
         "email": "89q05pd6i@mozmail.com"
       },
-      "repository": "https://github.com/thecarlo/carlo-marketplace",
       "license": "MIT",
       "category": "development"
     },
@@ -76,7 +74,6 @@
         "name": "Carlo van Wyk",
         "email": "89q05pd6i@mozmail.com"
       },
-      "repository": "https://github.com/thecarlo/carlo-marketplace",
       "license": "MIT",
       "category": "version-control"
     }
