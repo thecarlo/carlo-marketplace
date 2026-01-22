@@ -104,9 +104,8 @@ Footer is optional and often used for referencing issues: Closes #123 or Fixes #
 A practical example:
 feat(checkout): add PayPal payment option
 
-Added integration with PayPal's API to support additional
-payment methods. This allows users to complete purchases
-without entering credit card information.
+- Added integration with PayPal's API
+- Implemented error handling
 
 Closes #234
 
@@ -159,6 +158,7 @@ When generating commit messages, follow these rules:
 - **Capitalize the first letter** of the subject line
 - **Keep the first line under 50 characters** for better readability in git logs
 - **Be descriptive rather than technical**: Explain what changed from a functional perspective, not implementation details
+- **List changes in bullet form**, 1 item per line rather than writing long sentences. Keep bullets to 6 points or less.
 - **Use imperative mood**: "add feature" not "added feature" or "adds feature"
 - **Include scope when relevant**: Helps identify which part of the codebase is affected
 - **Add body for additional context**: Explain the why and what in more detail when the subject alone isn't sufficient
